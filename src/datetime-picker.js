@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const dateInput = document.createElement('input');
     dateInput.type = 'date';
     dateInput.id = 'date';
-    dateInput.name = 'date';
+    dateInput.name = 'customer_date';
     dateInput.required = true;
     dateBox.appendChild(dateInput);
     dateInput.addEventListener('change', ()=>{
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         timeSelect = document.createElement('select');
         timeSelect.id = 'time';
-        timeSelect.name = 'time';
+        timeSelect.name = 'customer_time';
         timeSelect.required = true;
         dateBox.appendChild(timeSelect);
 
