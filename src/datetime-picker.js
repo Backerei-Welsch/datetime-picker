@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     dateInput.id = 'date';
     dateInput.name = 'customer_date';
     dateInput.required = true;
-    dateBox.appendChild(dateInput);
+    dateLabel.appendChild(dateInput);
     dateInput.addEventListener('change', ()=>{
 
 
@@ -25,10 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
         let timeSelectLabel = document.getElementById('time-label');
         if(timeSelectLabel){
             timeSelectLabel.remove();
-        }
-        let timeSelect = document.getElementById('time');
-        if(timeSelect){
-            timeSelect.remove();
         }
 
         timeSelectLabel = document.createElement('label');
@@ -41,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
         timeSelect.id = 'time';
         timeSelect.name = 'customer_time';
         timeSelect.required = true;
-        dateBox.appendChild(timeSelect);
+        timeSelectLabel.appendChild(timeSelect);
 
         generateTimeOptions("./testtimes.json");
 
